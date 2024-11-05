@@ -6,9 +6,17 @@
 function isPalindrome(word) {
     let result = "";
 
-    for (let i = userWord.length - 1; i >= 0; i--) {
-    const curChar = userWord[i];
+    for (let i = word.length - 1; i >= 0; i--) {
+    const curChar = word[i];
     result = result + curChar;
     }
-    return result;
+
+    let message = "";
+
+    if (result === word) {
+        message = "La parola e' palindroma!"
+    } else {
+        message = "La parola non e' palindroma!"
+    }
+    return message;
 }
