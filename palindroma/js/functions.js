@@ -3,6 +3,7 @@
  * @param {string} word
  * @returns {boolean}
  */
+
 function isPalindrome(word) {
     let result = "";
 
@@ -11,12 +12,6 @@ function isPalindrome(word) {
         result = result + curChar;
     }
 
-    let message = "";
-
-    if (result === word) {
-        message = "La parola e' palindroma!"
-    } else {
-        message = "La parola non e' palindroma!"
-    }
-    return message;
+    const endResult = (result === word);
+    return endResult;
 }

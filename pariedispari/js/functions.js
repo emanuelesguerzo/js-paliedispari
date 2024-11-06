@@ -9,10 +9,10 @@ function randomNum (min, max) {
     return number;
 }
 
-/**
+/** 
  * Verifica se un numero e' pari o dispari
  * @param {number} number
- * @returns {boolean}
+ * @returns {string}
  */
 
 function pariDispari(number) {
